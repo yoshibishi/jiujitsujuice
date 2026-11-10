@@ -46,6 +46,15 @@ a:focus-visible{outline:2px solid #78baff;outline-offset:4px;border-radius:3px}
   .product-content{display:flex;flex-direction:column}
   .product-content > .btn{margin-top:16px}
 }
+
+/* Three readable tagline lines on phones; one line on larger screens. */
+@media (min-width: 601px) {
+  .hero-tagline { white-space: nowrap; }
+}
+@media (max-width: 600px) {
+  .hero-tagline { display: flex; flex-direction: column; align-items: center; gap: 5px; line-height: 1.25; }
+  .hero-tagline span { display: block; white-space: nowrap; }
+}
 </style><style>.collection-status{padding:42px 18px;background:#151821;color:#fff}.collection-status .container{max-width:1000px;margin:auto}.collection-status p{line-height:1.65}.collection-status a{color:#d3e1ff;text-decoration:underline}</style></head><body><header><div class="container nav"><a class="brand" href="/skincare/">JIU-JITSU <span>JUICE</span></a><nav aria-label="Navigation" class="nav-links"><a href="/skincare/">Home</a><a aria-current="page" href="/skincare/serums/">Serums</a><a href="/skincare/white-to-black/">White to Black</a></nav></div></header><main><section class="hero"><div class="container"><div class="eyebrow">Performance skincare for the mat</div><h1>Serum Collection</h1><p>Three targeted face serums inspired by the mats. Explore each formula, compare ingredients, and find your post-training routine.</p><div class="hero-tagline"><span class="blue">Small Batch.</span> <span class="purple">Handcrafted.</span> <span class="brown">NC Made.</span></div></div></section><section aria-label="Skincare products" class="container products" id="collection">
 <article class="product"><div class="visual"><a aria-label="Explore Tap Out product details" href="/skincare/tap-out/"><img alt="Tap Out blue face serum bottle" loading="lazy" src="/assets/tap-out-bottle.webp"/></a></div><div class="product-content"><h2>Tap Out</h2><div class="descriptor">Dual-peptide smoothing + hydration</div><div class="price">$30 <small style="font-size:.8rem;font-weight:500">/ 30 mL</small></div><p>A lightweight serum featuring Syn-Ake and SNAP-8 peptides with multi-molecular-weight hyaluronic acid to hydrate skin and soften the appearance of expression lines.</p><ul><li>Syn-Ake</li><li>SNAP-8</li><li>Hyaluronic Acid (Sodium Hyaluronate)</li><li>Aloe Vera Leaf Juice</li></ul><a class="btn" href="/skincare/tap-out/">Explore Tap Out</a></div></article>
 <article class="product purple"><div class="visual"><a aria-label="Explore Mat Glow product details" href="/skincare/mat-glow/"><img alt="Mat Glow purple face serum bottle" loading="lazy" src="/assets/mat-glow-bottle.webp"/></a></div><div class="product-content"><h2>Mat Glow</h2><div class="descriptor">Daily firming + hydration</div><div class="price">$40 <small style="font-size:.8rem;font-weight:500">/ 30 mL</small></div><p>A daily multi-peptide serum featuring 1% GHK-Cu, Matrixyl 3000, Argireline, and hyaluronic acid for hydration and smoother-looking skin.</p><ul><li>1% GHK-Cu</li><li>Matrixyl 3000</li><li>Argireline</li><li>Hyaluronic Acid</li></ul><a class="btn" href="/skincare/mat-glow/">Explore Mat Glow</a></div></article>
