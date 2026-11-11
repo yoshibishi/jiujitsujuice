@@ -31,7 +31,7 @@ a:focus-visible{outline:2px solid #78baff;outline-offset:4px;border-radius:3px}
 @media(min-width:901px){
   .product-content{
     display:grid;
-    grid-template-rows:50px 52px 78px 190px 160px 48px;
+    grid-template-rows:50px 52px 78px 34px minmax(150px,auto) minmax(170px,auto) 48px;
     align-content:start;
     flex:1;
   }
@@ -40,7 +40,8 @@ a:focus-visible{outline:2px solid #78baff;outline-offset:4px;border-radius:3px}
   .product-content > .price{margin:14px 0;align-self:start}
   .product-content > p{margin:12px 0 10px;min-height:0;align-self:start}
   .product-content > ul{margin:6px 0 16px;min-height:0;align-self:start}
-  .product-content > .btn{margin:0;align-self:stretch}
+  .product-content > .duration-note{align-self:start;margin:0}
+  .product-content > .btn{margin:0;align-self:stretch;align-items:center;justify-content:center}
 }
 @media(max-width:900px){
   .product-content{display:flex;flex-direction:column}
